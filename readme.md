@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/edjafarov/http-connector.svg?branch=master)](https://travis-ci.org/edjafarov/http-connector)
 ## http-connector server to client and client to server connector
 
 Connector have two parts. The web part and server part. Connector allows not to think about how to implement communication between client and server and just send messages out and handle incoming messages. The connector abstracts communication to two methods (send and listen) on one side and two methods(send and listen) on other side. Implementations could vary and any protocol that can send messages will work. This specific implementation is for http.
