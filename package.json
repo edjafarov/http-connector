@@ -1,8 +1,9 @@
 {
   "name": "http-connector",
-  "version": "1.0.0",
+  "version": "0.1.1",
   "description": "",
-  "main": "index.js",
+  "main": "./src/httpConnector.js",
+  "browser":"./src/httpConnector.client.js",
   "scripts": {
     "test": "node node_modules/mocha/bin/mocha ./tests/**/*.spec.js"
   },

@@ -1,4 +1,5 @@
 var traverse = require('traverse');
+var Busboy = require('busboy');
 
 module.exports = function(options){
   var base = options.base || "";
@@ -59,7 +60,6 @@ module.exports = function(options){
     //express app
     //highly experimental
     HTTPServerClientStream: function ServerClientStream(app){
-      var Busboy = require('busboy');
       var StreamHandler;
       var FilesForRequest = {};
       app.use(function(req, res, next){
