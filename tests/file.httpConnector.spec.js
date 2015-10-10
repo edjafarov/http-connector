@@ -64,8 +64,8 @@ describe("Server is UP", function(){
       var incomingMessage = serverHandler.lastCall.args[0];
       response = incomingMessage._response;
       delete incomingMessage._response;
-      expect(incomingMessage.files[0]).to.have.property('pipe').that.is.a('function');
-      expect(incomingMessage.files[1]).to.have.property('pipe').that.is.a('function')
+      expect(incomingMessage.files[0].stream).to.have.property('pipe').that.is.a('function');
+      expect(incomingMessage.files[1].stream).to.have.property('pipe').that.is.a('function')
     })
     xdescribe('send response', function(){
       before(function(done){

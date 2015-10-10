@@ -85,6 +85,7 @@ module.exports = function(options){
               delete message.__waitForFiles;
               files.forEach(function setFilesToObject(file){
                 var path = file.path.split("|");
+                path.push('stream');
                 traverse(message).set(path, file.file);
               })
               StreamHandler(message)
