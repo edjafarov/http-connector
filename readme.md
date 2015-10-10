@@ -6,6 +6,7 @@ Connector doesn't implement transaction. Thus to make the communication as a tra
 
 You can also pass files through the connector to a server. You can build as complex message objects as you like and put <File> objects anywhere, It could be multiple files in array for example <FileList>. When the message will pass to a server the <File> objects will have a stream property that you can use to pipe anywhere you like.
 
+
 ### HTTPServerClientStream
 
 ```javascript
