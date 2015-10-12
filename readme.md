@@ -31,3 +31,7 @@ cconn.listen(function(message){
   //handle message
 });
 ```
+
+## IMPORTANT
+
+If you want this to scale. You will need to make kind of sticky session. Because the files are posted outside of original request, thus this two requests should go to the same backend node.
