@@ -28,7 +28,7 @@ app.listen(process.env.PORT)
 var cconn = connector.HTTPClientServerStream();
 cconn.send({files:document.getElementById('myInput').files})
 cconn.listen(function(message){
-  //handle message
+  //handle response
 });
 ```
 
